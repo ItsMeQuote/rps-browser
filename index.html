@@ -259,7 +259,7 @@
                     userScore++;
                     scoreYou.textContent = `Вы: ${userScore}`;
                     console.log(`Пользователь выиграл, используя ${choice}, а бот выбрал ${botChoice}`);
-                } else if (choice == botChoice) {
+                } else if (choice === botChoice) {
                     result.style.textShadow = "0 2px 30px rgba(255, 255, 0, 0.3)";
                     result.style.transition = "text-shadow 0.3s ease";
                     result.textContent = `Ничья (${botChoice})!`;
